@@ -8,14 +8,42 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.5/jspdf.debug.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.1/jspdf.umd.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.0/FileSaver.min.js"></script>
+        <link href="https://fonts.maateen.me/bangla/font.css" rel="stylesheet">
 
-        
+        <style>
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+
+.button2 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #008CBA;
+}
+
+.button2:hover {
+  background-color: #008CBA;
+  color: white;
+}
+
     </head>
     <body>
+            <h2 style="font-family: 'Bangla', Arial, sans-serif !important;">সার্টিফিকেট ডাউনলোড করতে নিচের বক্সটি সঠিকভাবে পূরণ করুন। শুধুমাত্র ইংরেজি অক্ষর গ্রহণযোগ্য</h2><br><br>
         <p>Name: </p><input id="name" type="text" required><br>
         <p>Institute: </p><input id="institute" type="text" required><br>
         <p>Username / Registration No: </p><input id="regno" type="text" required><br> <br>
-        <button id="btn">Download Certificate</button>
+        <button id="btn" class="button button2">Download Certificate</button>
         <script>
             $(document).ready(function(){
                 $("#btn").click(function(){
